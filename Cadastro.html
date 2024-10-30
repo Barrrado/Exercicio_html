@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <script>
+                function mostrarsenha(){
+        var input = document.getElementById('Senha1');
+        var button = document.getElementById('showpass');
+            if (input.type === 'password')
+            {
+                input.setAttribute('type','text');
+                button.textContent  = "Exibir";
+            }
+            else
+            { 
+            input.setAttribute('type','password');
+            button.textContent = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+        <label for="Nome">Nome: </label>
+        <input id="Nome"   type="text" placeholder="Nome">
+        <br>
+        <label for="Email">Email:  </label> 
+        <input id="Email"   type="email" placeholder="Email">
+        <br>
+        <label for="Senha1">Senha: </label>
+        <input id="Senha1" type="password" placeholder="senha">
+        <button type="button" id="show" onclick="mostrarsenha()">Exibir Senha</button>
+        <br>
+        <button type="submit"  style="margin: 10px;">Cadastrar</button>
+    </form>
+    
+</body>
+</html>
